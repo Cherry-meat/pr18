@@ -8,7 +8,7 @@ public class Main {
         int j;
         for(int i = 1; i<A.length; i++){
             int temp = A[i];
-            for(j = i; j > 0 && func.swap(temp,A[j-1]); j--){//место, где лямбды меняют работу метода
+            for(j = i; j > 0 && func.swap(temp,A[j-1]); j--){
                 A[j] = A[j - 1];
             }
             A[j] = temp;
